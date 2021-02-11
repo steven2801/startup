@@ -1,0 +1,836 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    min-height: 100vh;
+}
+
+header {
+    height: 10vh;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.mobile-link {
+    display: none;
+}
+
+.logo-container a {
+    text-decoration: none;
+    color: black;
+}
+
+.link-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.link-container li {
+    height: 100%;
+    list-style-type: none;
+    padding: 0 .8rem;
+    transition: .3s ease;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.link i {
+    padding-right: .2rem;
+}
+
+.link-container li:hover {
+    opacity: .8;
+}
+
+.shadow {
+    overflow: auto;
+    box-shadow: 0 2px 2px rgb(199, 195, 195);
+}
+
+/* home */
+.home {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.home-container {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+    padding: 6rem 0 3rem 0;
+}
+
+.home-container h1 {
+    color: white;
+    margin: 2.5rem 0;
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+
+.home-container p {
+    font-size: 1.1rem;
+    color: white;
+    margin: 2rem 0;
+}
+
+.home-container a {
+    color: black;
+    background-color: rgb(250, 235, 215);
+    width: fit-content;
+    height: fit-content;
+    padding: .8rem 1.5rem;
+    transition: .3s ease;
+}
+
+.home-container a:hover {
+    opacity: .7;
+}
+
+.social {
+    margin: 2rem 0;
+}
+
+.social i {
+    color: white;
+    transition: .2s ease;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-right: .2rem;
+}
+
+.social i:hover {
+    opacity: .8;
+}
+
+/* about section */
+.about {
+    width: 100%;
+    background-color: white;
+    padding: 8rem 1rem;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-title {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.sub-title {
+    margin: 1rem 0 2rem 0;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.about-desc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.quarter {
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.quarter i {
+    font-size: 4rem;
+    padding: 2rem 0;
+}
+
+.quarter .p1 {
+    font-size: 1.2rem;
+}
+
+.quarter .p2 {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: .9rem;
+}
+
+/* we know design section */
+.we-know-design {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8rem 4rem;
+    background-color: #f1f1f1;
+}
+
+.we-know-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.we-know-text {
+    min-width: 50%;
+    margin: 0 2rem 2rem 0;
+}
+
+.smaller-title {
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 0 0 1rem 0;
+}
+
+.smaller-p {
+    margin: 1rem 0 2rem 0;
+}
+
+.view-btn {
+    padding: .5rem .8rem;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    transition: .3s ease;
+    margin-bottom: 1rem;
+}
+
+.view-btn:hover {
+    opacity: .8;
+}
+
+.view-btn i {
+    padding: 0 .5rem;
+}
+
+.we-know-image {
+    min-width: 40%;
+    width: 25rem;
+}
+
+.we-know-image img {
+    width: 100%;
+    min-width: 10rem;
+}
+
+/* team section */
+.team {
+    background-color: white;
+    padding: 4rem 2rem;
+}
+
+.profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.quarter-profile {
+    width: 16rem;
+    box-shadow: 0 3px 5px rgb(189, 185, 185);
+    margin: 1rem .8rem
+}
+
+.quarter-profile img {
+    width: 100%;
+    filter: saturate(.3)
+}
+
+.text {
+    padding: .3rem .6rem;
+}
+
+.role {
+    padding: .5rem 0;
+    color: rgb(160, 157, 157);
+}
+
+.desc-profile {
+    font-size: .9rem;
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: .5rem 1rem;
+    margin: 1rem 0 .8rem 0;
+    background-color: rgb(238, 238, 238);
+    color: black;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    transition: .3s ease;
+}
+
+.contact-btn:hover {
+    background-color: rgb(207, 207, 207);
+}
+
+.contact-btn i {
+    padding-right: .4rem;
+}
+
+/* stats section */
+.stats {
+    display: flex;
+    background-color: rgb(97, 97, 97);
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 4rem 0;
+}
+
+.stat-block {
+    width: 12rem;
+    padding: 1rem 2rem;
+}
+
+.stat-block h2 {
+    color: white;
+    font-size: 2.2rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.stat-block p {
+    color: white;
+    font-weight: 200;
+    text-align: center;
+}
+
+/* our work section */
+.our-work {
+    background-color: white;
+    padding: 4rem 2rem;
+}
+
+.work-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.work-images img {
+    display: inline-block;
+    width: 18rem;
+    padding: .6rem;
+    transition: .2s ease;
+}
+
+.work-images img:hover {
+    filter: brightness(.7);
+}
+
+.display-image {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    display: none;
+    background-color: rgba(0, 0, 0, .95);
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.display-image i {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 2rem;
+    color: white;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: .2s ease;
+}
+
+.display-image i:hover {
+    opacity: .8;
+}
+
+.fa-times-thin:before {
+	content: '\00d7';
+}
+
+.display-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.display-image img {
+    animation: pushed-out .5s ease;
+}
+
+.display-image p {
+    color: white;
+    padding: .5rem 0;
+}
+
+/* skills section */
+.skills {
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4rem 2rem;
+}
+
+.skills-title {
+    min-width: 20rem;
+    flex: 1;
+    margin: 0 2rem 2rem 0;
+}
+
+.skills-title p {
+    font-weight: 300;
+}
+
+.skills-percentage {
+    min-width: 20rem;
+    flex: 1;
+}
+
+.skill-segment i {
+    margin-right: 1rem;
+}
+
+.skill-segment span {
+    letter-spacing: .2rem;
+}
+
+.percent {
+    background-color: rgb(211, 210, 210);
+    margin: 1.2rem 0;
+}
+
+.skill-segment .p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    color: white;
+    height: 1.8rem;
+}
+
+.ninety {
+    width: 90%;
+}
+
+.eighty-five {
+    width: 85%;
+}
+
+.seventy-five {
+    width: 75%;
+}
+
+/* pricing section */
+.pricing {
+    background-color: rgb(97, 97, 97);
+    padding: 6rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-title {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.pricing-subtitle {
+    color: white;
+    text-align: center;
+    padding: .5rem 0;
+}
+
+.price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 3rem 0 0 0;
+}
+
+.price-block {
+    width: 32%;
+    margin: 0 .2rem;
+    min-width: 12rem;
+    transition: .5s ease;
+    opacity: .8;
+}
+
+.price-block h1 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    padding: 2rem 0;
+}
+
+.price-block p {
+    background-color: white;
+    text-align: center;
+    padding: 1.2rem 0;
+    border-bottom: 1px solid rgb(216, 214, 214);
+}
+
+.price h2 {
+    text-align: center;
+}
+
+.price p {
+    padding: .2rem 0;
+    border-bottom: none;
+}
+
+.price {
+    padding: 1rem 0;
+    background-color: white;
+}
+
+.sign-up {
+    background-color: rgb(241, 241, 241);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+
+.sign-up-btn {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: .5rem 1rem;
+    display: inline-block;
+    transition: .2s;
+}
+
+.sign-up-btn:hover {
+    opacity: .8;
+}
+
+.price-block:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+    box-shadow: 0px 2px 10px rgb(36, 36, 36);
+}
+
+.selected {
+    opacity: 1;
+}
+
+.selected h1 {
+    background-color: #F44336;
+    animation: small-to-big .5s ease;
+}
+
+.change-padding h1 {
+    padding: 3rem 0;
+}
+
+/* contact section */
+.contact {
+    background-color: rgb(241, 241, 241);
+    padding: 6rem 2rem;
+}
+
+.contact img {
+    width: 100%;
+    filter: saturate(.5) brightness(.8);
+}
+
+.info div {
+    display: flex;
+}
+
+.info .icon {
+    display: flex;
+    align-items: flex-end;
+    margin: .8rem 0;
+}
+
+.info .icon i {
+    font-size: 2.2rem;
+    width: 3.5rem;
+}
+
+.info .icon p {
+    font-weight: 300;
+}
+
+.user {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.user input {
+    padding: .7rem .5rem;
+    border: 1px solid rgb(199, 195, 195);
+    outline: none;
+    margin: .4rem 0;
+    flex: 1;
+    font-size: 1rem;
+}
+
+.user a {
+    padding: .5rem 1rem;
+    background-color: black;
+    color: white;
+    width: fit-content;
+    text-decoration: none;
+    font-weight: 300;
+    margin: .3rem 0;
+    transition: .2s ease;
+}
+
+.user a:hover {
+    opacity: .8;
+}
+
+.user i {
+    margin-right: .4rem;
+}
+
+/* footer */
+footer {
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.to-the-top {
+    width: fit-content;
+    background-color: rgb(241, 241, 241);
+    text-decoration: none;
+    color: black;
+    padding: .5rem 1rem;
+    transition: .2s ease;
+}
+
+.to-the-top:hover {
+    opacity: .8;
+}
+
+.to-the-top i {
+    margin-right: .4rem;
+}
+
+.ending-p {
+    color: white;
+}
+
+.ending-p a {
+    color: rgb(63, 209, 63);
+    text-decoration: none;
+    opacity: 1;
+    transition: .2s ease;
+}
+
+.ending-p a:hover {
+    opacity: .8;
+}
+
+@keyframes small-to-big {
+    100% {
+        padding: 3rem 0;
+    }
+}
+
+@keyframes pushed-out {
+    0% {
+        width: 0;
+    }
+    
+    100% {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .we-know-container {
+        flex-wrap: wrap;
+    }
+
+    .we-know-image {
+        width: 100%;
+    }
+
+    .price-container {
+        display: flex;
+        justify-content: center;
+    }
+    .price-block {
+        margin: .5rem 0;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .mobile-link {
+        display: flex;
+    }
+
+    .link-container {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 10vh;
+        right: 0;
+        height: 90vh;
+        width: 50vw;
+        background-color: white;
+        transform: translateX(100%);
+        z-index: 0;
+    }
+
+    .link-container li {
+        width: 100%;
+    }
+
+    .link-container li a {
+        display: flex;
+        justify-content: center;
+    }
+
+    .quarter-profile {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .home {
+        height: 80vh;
+    }
+
+    .desc h1 {
+        font-size: 2rem;
+        margin: 2rem 0;
+    }
+
+    .desc p {
+        font-size: .8rem;
+        margin: 1rem 0;
+    }
+
+    .desc .link {
+        padding: .5rem 1rem;
+        font-size: .8rem;
+    }
+
+    .about {
+        padding: 4rem 1rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .sub-title {
+        font-size: 1rem;
+    }
+
+    .we-know-design {
+        padding: 4rem 2rem;
+    }
+
+    .skills-percentage {
+        min-width: 260px;
+    }
+
+    .skills-title {
+        margin-right: 0;
+        min-width: 260px;
+    }
+
+    .pricing {
+        padding: 4rem 2rem;
+    }
+
+    .contact {
+        padding: 4rem 2rem;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .link-container {
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .skills, .team {
+        padding: 3rem .8rem;
+    }
+
+    .pricing {
+        padding: 3rem 0;
+    }
+
+    .we-know-design {
+        padding: 3rem 1rem;
+    }
+
+    .smaller-title {
+        font-size: 1.8rem;
+    }
+}
+
+
+.display-none {
+    display: none;
+}
+
+@keyframes slide-left {
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-right {
+    100% {
+        transform: translateX(100%);
+    }
+}
